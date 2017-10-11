@@ -24,14 +24,15 @@
   "author": "Hyojin Kwak",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-tap-event-plugin": "^1.0.0 || ^2.0.0"
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "dependencies": {
     "babel-runtime": "^6.18.0",
-    "material-ui": "0.18.0",
-    "prop-types": "^15.5.10"
+    "material-ui": "^0.19.4",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
@@ -61,16 +62,24 @@
     "jsdom": "^9.10.0",
     "mocha-lcov-reporter": "^1.2.0",
     "nyc": "^10.1.2",
-    "react": "^15.5.4",
     "react-addons-test-utils": "^15.4.2",
-    "react-dom": "^15.5.4",
-    "react-tap-event-plugin": "^2.0.0",
     "sinon": "^1.17.7",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0",
     "webpack": "^1.13.3"
   },
   "browserify": {
-    "transform": [["babelify", {"presets": ["es2015", "react", "stage-1"]}]]
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react",
+            "stage-1"
+          ]
+        }
+      ]
+    ]
   }
 }
